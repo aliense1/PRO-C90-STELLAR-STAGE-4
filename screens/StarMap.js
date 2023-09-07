@@ -27,6 +27,15 @@ export default class StarMapScreen extends Component {
                         })
                     }}/>
                     
+                     <TextInput
+                      style={{height:40,borderColor:'gray',borderWidth:1}}
+                      placeholder="Enter your lattitude here "
+                      placeholderTextColor="ffff#000000"
+                      onChnagetext={(text)=>{
+                        this.setState({
+                            longitude:text
+                        })
+                    }}/>
               <WebView 
                   scalesPageToFit={true}
                   sorce={{uri:path}}
